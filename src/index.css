@@ -8,8 +8,18 @@
   margin: 0;
 }
 
+html,
 body {
   -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Safari and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 img,

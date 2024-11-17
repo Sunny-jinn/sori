@@ -1,11 +1,14 @@
 import './App.css'
+import { FirstPage } from './components/FirstPage'
 import './styles/fonts.css'
+import { SecondPage } from './components/SecondPage'
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <FirstPage />
+      <SecondPage />
+    </>
   )
 }
 
