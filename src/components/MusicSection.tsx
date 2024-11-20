@@ -1,5 +1,7 @@
 import styled from '@emotion/styled'
 import icon_arrow from '../assets/images/icon_button_arrow.svg'
+import { useState } from 'react'
+import { VideoModal } from './VideoModal'
 
 const Container = styled.div`
   display: flex;
@@ -53,6 +55,8 @@ export const MusicSection = ({
   content,
   buttonText,
 }: MusicSectionProps) => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+
   return (
     <Container>
       <Title>{title}</Title>
@@ -65,10 +69,14 @@ export const MusicSection = ({
           </>
         ))}
       </Content>
-      <Button>
+      <Button onClick={() => setIsModalOpen(true)}>
         <span>{buttonText}</span>
         <img src={icon_arrow} alt='arrow' />
       </Button>
+
+      {isModalOpen && (
+        <VideoModal onClose={() => setIsModalOpen(false)} title={name} />
+      )}
     </Container>
   )
 }
