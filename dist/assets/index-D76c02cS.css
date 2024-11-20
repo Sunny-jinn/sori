@@ -1,1 +1,104 @@
-*,*:before,*:after{box-sizing:border-box}*{margin:0}html,body{-webkit-font-smoothing:antialiased;overflow-y:auto;-ms-overflow-style:none;scrollbar-width:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit;padding:0;margin:0}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word;word-break:keep-all}#root{isolation:isolate}a{text-decoration:none}button{background:none;border:none;cursor:pointer}@font-face{font-family:Pretendard;font-weight:100;src:url(/sori/assets/Pretendard-Thin-DKNzjk0_.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:200;src:url(/sori/assets/Pretendard-ExtraLight-BMvTrpXW.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:300;src:url(/sori/assets/Pretendard-Light-8YFqANUM.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:400;src:url(/sori/assets/Pretendard-Regular-B1aZXLkw.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:500;src:url(/sori/assets/Pretendard-Medium-WaBl2Cb5.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:600;src:url(/sori/assets/Pretendard-SemiBold-BLhvdAaC.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:700;src:url(/sori/assets/Pretendard-Bold-CWUot9An.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:800;src:url(/sori/assets/Pretendard-ExtraBold-Dcp3-PmT.otf) format("truetype")}@font-face{font-family:Pretendard;font-weight:900;src:url(/sori/assets/Pretendard-Black-BT1H1OcC.otf) format("truetype")}body{font-family:Pretendard,sans-serif}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+#root {
+  isolation: isolate;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 100;
+  src: url(/sori/assets/Pretendard-Thin-DKNzjk0_.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 200;
+  src: url(/sori/assets/Pretendard-ExtraLight-BMvTrpXW.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 300;
+  src: url(/sori/assets/Pretendard-Light-8YFqANUM.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 400;
+  src: url(/sori/assets/Pretendard-Regular-B1aZXLkw.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 500;
+  src: url(/sori/assets/Pretendard-Medium-WaBl2Cb5.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 600;
+  src: url(/sori/assets/Pretendard-SemiBold-BLhvdAaC.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 700;
+  src: url(/sori/assets/Pretendard-Bold-CWUot9An.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 800;
+  src: url(/sori/assets/Pretendard-ExtraBold-Dcp3-PmT.otf) format('truetype');
+}
+@font-face {
+  font-family: Pretendard;
+  font-weight: 900;
+  src: url(/sori/assets/Pretendard-Black-BT1H1OcC.otf) format('truetype');
+}
+body {
+  font-family: Pretendard, sans-serif;
+}
