@@ -21,7 +21,7 @@ export const musicContents: Record<string, MusicContent> = {
     name: 'JAZZ',
     content: [
       'Jazz is a music genre rooted in the blues and',
-      'ragtime of African Ameriacans, characterized',
+      'ragtime of African Americans, characterized',
       'by improvisation and free expression',
     ],
     buttonText: 'Enjoy Music',

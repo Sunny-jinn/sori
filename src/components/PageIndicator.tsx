@@ -33,7 +33,11 @@ const Dot = styled.div<{
 `
 
 export const PageIndicator = ({ currentPage }: PageIndicatorProps) => {
-  currentPage = currentPage < 2 ? 2 : currentPage
+  if (currentPage < 2) {
+    currentPage = 2
+  } else if (currentPage === 5) {
+    currentPage = 4
+  }
   const dots = [0, 1, 2, 3, 4]
 
   return (

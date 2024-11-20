@@ -8,6 +8,8 @@ import { PageIndicator } from './components/PageIndicator'
 
 import './App.css'
 import './styles/fonts.css'
+import { FifthPage } from './components/FifthPage'
+import { SixthPage } from './components/SixthPage'
 
 function App() {
   const [renderedPage, setRenderedPage] = useState(0)
@@ -16,9 +18,9 @@ function App() {
 
   useEffect(() => {
     if (indicatorRef.current) {
-      if (currentPageRef.current >= 2) {
+      if (currentPageRef.current >= 2 && currentPageRef.current < 5) {
         indicatorRef.current.style.display = 'block'
-      } else if (currentPageRef.current === 1) {
+      } else if (currentPageRef.current === 1 || currentPageRef.current === 5) {
         indicatorRef.current.style.display = 'none'
       }
     }
@@ -28,11 +30,11 @@ function App() {
     currentPageRef.current = nextPage
 
     if (indicatorRef.current) {
-      if (nextPage === 2) {
+      if (nextPage === 2 || nextPage === 4) {
         setTimeout(() => {
           indicatorRef.current!.style.display = 'block'
         }, 650)
-      } else if (nextPage === 1) {
+      } else if (nextPage === 1 || nextPage === 5) {
         setTimeout(() => {
           indicatorRef.current!.style.display = 'none'
         }, 300)
@@ -60,6 +62,8 @@ function App() {
         <SecondPage />
         <ThirdPage />
         <FourthPage />
+        <FifthPage />
+        <SixthPage />
       </ReactPageScroller>
     </div>
   )
