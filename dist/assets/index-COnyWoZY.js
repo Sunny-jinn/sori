@@ -176,7 +176,6 @@ Error generating stack: `+i.message+`
   display: flex;
   margin-top: 125px;
   margin-left: auto;
-  margin-right: auto;
   width: 30vw;
 `,F0=O.div`
   transition: transform 0.3s ease;
