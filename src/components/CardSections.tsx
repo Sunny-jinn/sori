@@ -29,7 +29,6 @@ const CardSection = styled.div`
   display: flex;
   margin-top: 125px;
   margin-left: auto;
-  margin-right: auto;
   width: 30vw;
 `
 const CardContainer = styled.div`
