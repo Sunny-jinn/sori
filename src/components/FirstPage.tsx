@@ -14,7 +14,7 @@ const VideoBackground = styled.video`
 `
 
 const Title = styled.span`
-  font-size: 50px;
+  font-size: 2.6vw;
   font-weight: 700;
   color: white;
 `
@@ -41,18 +41,21 @@ const ContentContainer = styled.div`
 `
 
 const ContentTitle = styled.span`
-  font-size: 65px;
+  font-size: 3.38vw;
   font-weight: 700;
   color: white;
 `
 
 const ContentSubTitle = styled.span`
-  font-size: 35px;
+  font-size: 1.82vw;
   font-weight: 400;
   color: white;
 `
 
-const Logo = styled.img``
+const Logo = styled.img`
+  width: 2.083vw;
+  aspect-ratio: 1 / 1;
+`
 
 export const FirstPage = () => {
   return (

@@ -10,18 +10,18 @@ const Container = styled.div`
 `
 
 const Title = styled.span`
-  font-size: 21px;
+  font-size: 1.093vw;
   font-weight: 600;
 `
 
 const Name = styled.span`
-  font-size: 80px;
+  font-size: 4.167vw;
   font-weight: 800;
   margin-top: 12.96vh;
 `
 
 const Content = styled.span`
-  font-size: 18px;
+  font-size: 0.9375vw;
   font-weight: 400;
   margin-top: 3.24vh;
 `
@@ -29,17 +29,20 @@ const Content = styled.span`
 const Button = styled.button`
   margin-top: 8.8vh;
   width: 16.35vw;
-  min-width: 314px;
   aspect-ratio: 3.738;
   background: linear-gradient(90deg, #20f10f 0%, #8c36cb 100%);
-  border-radius: 42px;
+  border-radius: 2.1875vw;
   color: #fff;
-  font-size: 22px;
+  font-size: 1.146vw;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  img {
+    width: 2.76vw;
+  }
 `
 
 interface MusicSectionProps {

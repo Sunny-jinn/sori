@@ -14,45 +14,57 @@ interface CardSectionsProps {
 export const CardSections: React.FC<CardSectionsProps> = ({ cards }) => {
   return (
     <CardSection className='card-section'>
-      {cards.map((card, index) => (
-        <CardContainer key={index}>
-          <CardTitle>{card.title}</CardTitle>
-          <CardStar src={star} alt='star' />
-          <CardImage src={card.img} alt='card' />
-        </CardContainer>
-      ))}
+      <CardWrapper>
+        {cards.map((card, index) => (
+          <CardContainer key={index}>
+            <CardTitle className={index === 0 ? 'first-card' : ''}>
+              {card.title}
+            </CardTitle>
+            <CardStar
+              src={star}
+              alt='star'
+              className={index === 0 ? 'first-card' : ''}
+            />
+            <CardImage
+              src={card.img}
+              alt='card'
+              className={index === 0 ? 'first-card' : ''}
+            />
+          </CardContainer>
+        ))}
+      </CardWrapper>
     </CardSection>
   )
 }
 
 const CardSection = styled.div`
   display: flex;
-  margin-top: 125px;
+  margin-top: 80px;
   margin-left: auto;
-  width: 30vw;
+  align-items: end;
+  transform: translateX(4vw);
 `
+
+const CardWrapper = styled.div`
+  display: flex;
+  align-items: end;
+  gap: 34px;
+  margin-left: 150px;
+`
+
 const CardContainer = styled.div`
   transition: transform 0.3s ease;
-
-  & + & {
-    margin-left: 20px;
-  }
-
-  .card-section:hover & ~ & {
-    transform: translateX(60px);
-  }
 `
 
 const CardTitle = styled.span`
-  font-size: 12px;
+  font-size: 0.625vw;
   font-weight: 500;
   color: #cecac9;
   transition: all 0.3s ease;
   display: block;
 
-  .card-section:hover div:first-of-type & {
+  &.first-card {
     color: #fff;
-    transform: translateY(-70px);
   }
 `
 
@@ -62,20 +74,19 @@ const CardStar = styled.img`
   filter: invert(15%) sepia(3%) saturate(245%) hue-rotate(325deg)
     brightness(91%) contrast(93%);
   transition: all 0.3s ease;
+  width: 4.541vw;
 
-  .card-section:hover div:first-of-type & {
+  &.first-card {
     filter: none;
-    transform: translateY(-70px);
   }
 `
 
 const CardImage = styled.img`
-  max-width: 291px;
-  height: 375px;
-  transition: transform 0.3s ease;
-  transform-origin: left bottom;
+  width: 15.156vw;
+  height: 34.72vh;
 
-  .card-section:hover div:first-of-type & {
-    transform: scale(1.2);
+  &.first-card {
+    width: 18.646vw;
+    height: 42.2vh;
   }
 `

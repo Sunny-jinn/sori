@@ -9,26 +9,27 @@ interface VideoModalProps {
   onClose: () => void
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ isTechno: boolean }>`
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
-  z-index: 99999; /* 최상위로 보이게 설정 */
-  background-color: #000;
+  z-index: 99999;
+  background-color: ${({ isTechno }) => (isTechno ? '#fff' : '#000')};
 `
 
-const Button = styled.button`
+const Button = styled.button<{ isTechno: boolean }>`
   position: absolute;
   top: 7.97vh;
   right: 3.125vw;
+  filter: ${({ isTechno }) => (isTechno ? 'brightness(0)' : 'none')};
 `
 
 const Video = styled.video`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 `
 
 export const VideoModal = ({ title, onClose }: VideoModalProps) => {
@@ -41,14 +42,12 @@ export const VideoModal = ({ title, onClose }: VideoModalProps) => {
 
   if (!mounted) return null
 
-  console.log(title)
-
   return ReactDOM.createPortal(
-    <Wrapper>
+    <Wrapper isTechno={title === 'TECHNO'}>
       <Video autoPlay muted loop playsInline>
         <source src={musicVideos[title].video} type='video/mp4' />
       </Video>
-      <Button onClick={onClose}>
+      <Button isTechno={title === 'TECHNO'} onClick={onClose}>
         <img src={icon_delete} alt='Close' />
       </Button>
     </Wrapper>,

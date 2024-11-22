@@ -12,8 +12,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  padding-top: 10.27vh;
+  /* padding-top: 10.27vh; */
 
   background-color: #000;
   color: white;
@@ -27,12 +28,12 @@ const TitleContainer = styled.div`
 `
 
 const Title = styled.span`
-  font-size: 40px;
+  font-size: 1.25vw;
   font-weight: 700;
 `
 
 const SubTitle = styled.span`
-  font-size: 28px;
+  font-size: 0.83vw;
   font-weight: 400;
   text-align: center;
   color: #d5d5d5;
@@ -58,7 +59,7 @@ const ImageText = styled.span`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 60px;
+  font-size: 1.56vw;
   font-weight: 700;
 `
 
@@ -70,11 +71,9 @@ export const SecondPage = () => {
           <Title>The Mission of SORI:</Title>
           <SubTitle>
             We wanted to provide a means of providing a service where the deaf
-            <br />
-            can enjoy music in their daily lives, and the sound appears
-            visually,
-            <br />
-            interacts with others, and communicates with the world.
+            can enjoy music in their daily lives,
+            <br /> and the sound appears visually, interacts with others, and
+            communicates with the world.
           </SubTitle>
         </TitleContainer>
         <ImageWrapper>
@@ -82,8 +81,8 @@ export const SecondPage = () => {
             <ImageCard
               src={img_edm}
               alt='edm'
-              width={'24.32vw'}
-              height={'55.1vh'}
+              width={'22.7vw'}
+              height={'51.38vh'}
               dark
             />
             <ImageText>EDM</ImageText>
@@ -92,8 +91,8 @@ export const SecondPage = () => {
             <ImageCard
               src={img_techno}
               alt='techno'
-              width={'24.32vw'}
-              height={'55.1vh'}
+              width={'22.7vw'}
+              height={'51.38vh'}
               dark
             />
             <ImageText>TECHNO</ImageText>
@@ -102,8 +101,8 @@ export const SecondPage = () => {
             <ImageCard
               src={img_jazz}
               alt='jazz'
-              width={'24.32vw'}
-              height={'55.1vh'}
+              width={'22.7vw'}
+              height={'51.38vh'}
               dark
             />
             <ImageText>JAZZ</ImageText>
