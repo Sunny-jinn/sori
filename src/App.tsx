@@ -10,6 +10,7 @@ import './App.css'
 import './styles/fonts.css'
 import { FifthPage } from './components/FifthPage'
 import { SixthPage } from './components/SixthPage'
+import { CurrentPageIndicator } from './components/CurrentPageIndicator'
 
 function App() {
   const [renderedPage, setRenderedPage] = useState(0)
@@ -53,6 +54,7 @@ function App() {
         style={{ display: renderedPage === 2 ? 'block' : 'none' }}
       >
         <PageIndicator currentPage={renderedPage} />
+        <CurrentPageIndicator currentPage={renderedPage} />
       </div>
       <ReactPageScroller
         onBeforePageScroll={handleBeforePageScroll}
