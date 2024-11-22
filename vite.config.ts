@@ -14,4 +14,7 @@ export default defineConfig({
     global: 'window', // 브라우저 환경에서 global을 window로 대체
   },
   base: '/sori/',
+  build: {
+    commonjsOptions: { transformMixedEsModules: true }, // Change
+  },
 })
