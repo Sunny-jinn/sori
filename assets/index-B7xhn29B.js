@@ -146,7 +146,7 @@ Error generating stack: `+a.message+`
 `,DP=Z.video`
   width: 100vw;
   height: 100vh;
-`,zP=({title:e,onClose:r})=>{const[t,n]=ee.useState(!1);return ee.useEffect(()=>(n(!0),()=>n(!1)),[]),t?pO.createPortal(F.jsxs(AP,{isTechno:e==="TECHNO",children:[F.jsx(DP,{autoPlay:!0,muted:!0,loop:!0,playsInline:!0,children:F.jsx("source",{src:FP[e].video,type:"video/mp4"})}),F.jsx($P,{isTechno:e==="TECHNO",onClick:r,children:F.jsx("img",{src:MP,alt:"Close"})})]}),document.body):null},UP=Z.div`
+`,zP=({title:e,onClose:r})=>{const[t,n]=ee.useState(!1);return ee.useEffect(()=>(n(!0),()=>n(!1)),[]),t?pO.createPortal(F.jsxs(AP,{isTechno:e==="TECHNO",children:[F.jsx(DP,{autoPlay:!0,loop:!0,playsInline:!0,children:F.jsx("source",{src:FP[e].video,type:"video/mp4"})}),F.jsx($P,{isTechno:e==="TECHNO",onClick:r,children:F.jsx("img",{src:MP,alt:"Close"})})]}),document.body):null},UP=Z.div`
   display: flex;
   flex-direction: column;
   padding-left: calc(10.78vw - 3.125vw);
