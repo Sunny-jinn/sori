@@ -44,7 +44,7 @@ export const VideoModal = ({ title, onClose }: VideoModalProps) => {
 
   return ReactDOM.createPortal(
     <Wrapper isTechno={title === 'TECHNO'}>
-      <Video autoPlay muted loop playsInline>
+      <Video autoPlay loop playsInline>
         <source src={musicVideos[title].video} type='video/mp4' />
       </Video>
       <Button isTechno={title === 'TECHNO'} onClick={onClose}>
